@@ -1,31 +1,19 @@
 # https://www.linkedin.com/pulse/realtime-object-detection-10-lines-python-code-jetson-dustin-franklin 
 
 import jetson.inference 
-
 import jetson.utilsnet = jetson.inference.detectNet("ssd-mobilenet-v2") 
-
 camera = jetson.utils.gstCamera() 
-
 display = jetson.utils.glDisplay() 
-
 while display.IsOpen(): 
-
 	img, width, height = camera.CaptureRGBA() 
-
 	detections = net.Detect(img, width, height) 
-
 	display.RenderOnce(img, width, height) 
-
 	display.SetTitle("Object Detection | Network {:.0f} FPS".format(1000.0 / net.GetNetworkTime())) 
-
- 
-
- 
-
+	
+	
+	
 # Another Example 
-
 # https://github.com/dusty-nv/jetson-inference 
-
 # https://github.com/dusty-nv/jetson-inference/blob/master/python/examples/detectnet-camera.py 
 
  
