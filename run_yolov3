@@ -1,6 +1,18 @@
 # Fan Control
 # sudo sh -c 'echo 255 > /sys/devices/pwm-fan/target_pwm' 
 
+# Running Darknet on Webcam (non-tiny) Note: Python Darknet - https://pypi.org/project/darknetpy/
 ./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights "nvarguscamerasrc auto-exposure=1 ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720, format=(string)NV12, framerate=(fraction)60/1 ! nvvidconv flip-method=0 ! video/x-raw, width=(int)1280, height=(int)720, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink -e"
 
-# Python Darknet - https://pypi.org/project/darknetpy/
+# Darknet Flags
+  -dont_show # doesn't output video
+  -ext_output "..." # Path to video to run darknet on 
+  -out_filename "..." # Write to a file of choosing(.avi, .mp4...)
+  
+# Runtimes
+  Darknet - 13 sec video ~1-2 min
+  Openpose - 13 sec video ~35 min
+  
+# Openpose Gesture, Emotions, Posture and Face Recognition
+
+
