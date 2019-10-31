@@ -13,7 +13,9 @@
   Darknet - 13 sec video ~1-2 min
   Openpose - 13 sec video ~35 min
   
-# Openpose Gesture, Emotions, Posture and Face Recognition
-https://github.com/srianant/computer_vision
+# Running Openpose
+  ./build/examples/openpose/openpose.bin --video movie.mp4 --display 0 --model_folder ./models --write_video output_video.mp4 --net_resolution 480x256
+  
+# Openpose Gesture, Emotions, Posture and Face Recognition - https://github.com/srianant/computer_vision
 
 
