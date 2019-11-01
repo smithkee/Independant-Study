@@ -17,5 +17,6 @@
   ./build/examples/openpose/openpose.bin --video movie.mp4 --display 0 --model_folder ./models --write_video output_video.mp4 --net_resolution 480x256
   
 # Openpose Gesture, Emotions, Posture and Face Recognition - https://github.com/srianant/computer_vision
+    Output Keypoints - https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/output.md
 
 
