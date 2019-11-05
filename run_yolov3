@@ -19,7 +19,7 @@
 # Openpose Gesture, Emotions, Posture and Face Recognition - https://github.com/srianant/computer_vision
     Output Keypoints - https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/output.md
     
-# Openpose Flags
+# Openpose Flags - https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/include/openpose/flags.hpp
 --face: Enables face keypoint detection.
 --hand: Enables hand keypoint detection.
 --video input.mp4: Read video.
